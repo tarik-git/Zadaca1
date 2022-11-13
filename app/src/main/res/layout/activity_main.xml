@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/tarik_fazlic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            app:layout_constraintStart_toEndOf="@id/profile_image_view"
+            app:layout_constraintTop_toTopOf="@id/profile_image_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="@id/name_label"
+            app:layout_constraintEnd_toEndOf="@id/name_label"
+            app:layout_constraintTop_toBottomOf="@id/name_label"
+            android:text="Tarik"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/surname_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="@id/name_label"
+            app:layout_constraintEnd_toEndOf="@id/name_label"
+            app:layout_constraintTop_toBottomOf="@id/name_text_view"
+            android:text="@string/surname"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="@id/surname_label"
+            app:layout_constraintEnd_toEndOf="@id/surname_label"
+            app:layout_constraintTop_toBottomOf="@id/surname_label"
+            android:layout_marginStart="8dp"
+            android:text="Fazlić" />
+
+        <View
+            android:id="@+id/divider_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_image_view" />
+
+        <TextView
+            android:id="@+id/address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:text="@string/address"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_view"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/address_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@id/address_label"
+            app:layout_constraintBottom_toBottomOf="@id/address_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/address_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Stupine"/>
+
+        <TextView
+            android:id="@+id/city_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/address_label"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/city"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/city_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/city_label"
+            app:layout_constraintBottom_toBottomOf="@id/city_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Tuzla"/>
+
+        <TextView
+            android:id="@+id/country_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/city_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/country"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/country_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/country_label"
+            app:layout_constraintBottom_toBottomOf="@id/country_label"
+            app:layout_constraintStart_toEndOf="@id/country_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Bosnia and Herzegovina"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/about_me_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_me"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/country_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/about_me_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/about_me_label"
+            app:layout_constraintBottom_toTopOf="@id/edit_button"
+            android:text="@string/lorem_ipsum_text"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

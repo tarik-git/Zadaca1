@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Zadaca</string>
+    <string name="name">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="address">Address:</string>
+    <string name="city">City:</string>
+    <string name="country">Country:</string>
+    <string name="about_me">About me:</string>
+    <string name="lorem_ipsum_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="edit">Edit</string>
+    <string name="enter_city_name">Enter city name</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_country_name">Enter country name</string>
+    <string name="enter_about_me">Enter about me</string>
+    <string name="save">Save</string>
+</resources>
